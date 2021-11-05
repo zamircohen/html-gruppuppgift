@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gruppuppgift</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
     <style>
         .list-group-item {
@@ -53,35 +54,37 @@
         float: left;
         }
 
-        /* right {
-            background-color: lightgray;
-            background: lightgray;
-        } */
+        h5 {
+          font-weight: 600;
+        }
 
+        small {
+          font-weight: 100;
+        }
 
-
+        .bi-images, .bi-archive, .bi-bar-chart-steps, .bi-emoji-smile, .bi-calendar-date {
+          color: blue;
+        }
 
     </style>
 
 </head>
 <body>
 
-    <br>
-
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
           <div class="col"> <!-- COLUMN 1 -->
             
             <ul class="list-group">
-                <li class="list-group-item" aria-current="true">&#128036</li>
-                <li class="list-group-item">🏠 Home</li>
-                <li class="list-group-item">🧭 Explore</li>
-                <li class="list-group-item">🔔 Notifications</li>
-                <li class="list-group-item">✉️ Messages</li>
-                <li class="list-group-item">🔖 Bookmarks</li>
-                <li class="list-group-item">✔️ Lists</li>
-                <li class="list-group-item">🙍 Profile</li>
-                <li class="list-group-item">🔁 More</li>
+                <li class="list-group-item" aria-current="true"><i class="bi bi-twitter"></i></li>
+                <li class="list-group-item"><i class="bi bi-house"></i> Home</li>
+                <li class="list-group-item"><i class="bi bi-hash"></i> Explore</li>
+                <li class="list-group-item"><i class="bi bi-bell"></i> Notifications</li>
+                <li class="list-group-item"><i class="bi bi-envelope"></i> Messages</li>
+                <li class="list-group-item"><i class="bi bi-bookmark"></i> Bookmarks</li>
+                <li class="list-group-item"><i class="bi bi-card-list"></i> Lists</li>
+                <li class="list-group-item"><i class="bi bi-person"></i> Profile</li>
+                <li class="list-group-item"><i class="bi bi-three-dots"></i> More</li>
 
                 <br>
 
@@ -89,22 +92,34 @@
                     <button class="btn btn-primary" type="button">Tweet</button>
                 </div>
             </ul>
-        </div> <!-- COLUMN 1 ENDS HERE-->
+          </div> <!-- COLUMN 1 ENDS HERE-->
 
 
 
           <div class="col-6" id="top"> <!-- COLUMN 2 -->
           
             <div class="alert alert-primary" role="alert">
+              <p style="text-align:left;">
                 <a href="#top">Home</a>
+                <span style="float:right;">
+                  <i class="bi bi-stars"></i>
+                </span>
+            </p>
             </div>
 
             <div class="card" >
                 <div class="card-body">
-                  <img src="images/man1.jpg" alt="user photo">  
-                  <h5 class="card-title">Tod Scott</h5>
+                  <img src="images/user.jpg" alt="user photo">  
+                  <h5 class="card-title">Zamir Cohen</h5>
                   <p class="card-text">What´s happening?</p>
-                  <p>&emsp; &emsp; &emsp; 📷 &emsp; ↔️ &emsp; 📈 &emsp; ☺️ &emsp; 📅 &emsp; &emsp; &emsp; <button class="btn btn-primary" type="button">Tweet</button></p>
+                  <!-- <p>&emsp; &emsp; &emsp; 📷 &emsp; ↔️ &emsp; 📈 &emsp; ☺️ &emsp; 📅 &emsp; &emsp; &emsp; -->
+                  <p style="display:inline">&emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-images"></i>&emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-archive"></i>&emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-bar-chart-steps"></i>&emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-emoji-smile"></i>&emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-calendar-date"></i>&emsp;</p>
+                  <button style="float:right; display:inline" class="btn btn-primary" type="button">Tweet</button></p>
                 </div>
               </div>
 
@@ -113,97 +128,113 @@
               <div class="card" >
                 <div class="card-body">
                   <img src="images/man1.jpg" alt="user photo">  
-                  <h5 class="card-title">Tod Scott</h5>
-                  <p class="card-text">Never ever write about politics on Twitter.</p>
-                  <a href="" class="card-link">💬 555</a>
-                  <a href="#" class="card-link">🔁 643</a>
-                  <a href="#" class="card-link">🤍 56</a>
-                  <a href="#" class="card-link">📤 234</a>
+                  <h5 class="card-title">Tod Scott <i class="bi bi-patch-check-fill"><small> @toddyscotty - Nov 5</small><span style="float:right;"><i class="bi bi-three-dots"></i></span></i></h5>
+                  <p class="card-text">HTML RULES!!!</p>
+                  <p style="display:inline">&emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-arrow-left-right"></i> 643 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-heart"></i> 56 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-upload"></i> 234</p>
                 </div>
               </div>
 
               <div class="card">
                 <div class="card-body">
                   <img src="images/man2.jpg" alt="user photo">  
-                  <h5 class="card-title">Xavier Savage</h5>
+                  <h5 class="card-title">Theo Theodor <small> @theotheo - Nov 5</small><span style="float:right;"><i class="bi bi-three-dots"></i></span></i></h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur...</p>
-                  <a href="" class="card-link">💬 544</a>
-                  <a href="#" class="card-link">🔁 542</a>
-                  <a href="#" class="card-link">🤍 23</a>
-                  <a href="#" class="card-link">📤 32</a>
+                  <p style="display:inline">&emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-arrow-left-right"></i> 643 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-heart"></i> 56 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-upload"></i> 234</p>
                 </div>
               </div>
 
               <div class="card">
                 <div class="card-body">
                   <img src="images/woman1.jpg" alt="user photo">  
-                  <h5 class="card-title">Julia Robertson</h5>
+                  <h5 class="card-title">Julia Robertsson <small> @julliarob - Nov 5</small><span style="float:right;"><i class="bi bi-three-dots"></i></span></i></h5>
                   <p class="card-text">I really don´t know what to write here...</p>
-                  <a href="" class="card-link">💬 998</a>
-                  <a href="#" class="card-link">🔁 2</a>
-                  <a href="#" class="card-link">🤍 545</a>
-                  <a href="#" class="card-link">📤 21</a>
+                  <p style="display:inline">&emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-arrow-left-right"></i> 643 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-heart"></i> 56 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-upload"></i> 234</p>
                 </div>
               </div>
 
               <div class="card">
                 <div class="card-body">
                   <img src="images/woman2.jpg" alt="user photo">  
-                  <h5 class="card-title">Mathilda Svensson</h5>
+                  <h5 class="card-title">Nicole Cohen <i class="bi bi-patch-check-fill"><small> @cohenforever - Nov 5</small><span style="float:right;"><i class="bi bi-three-dots"></i></span></i></h5>
                   <p class="card-text">Cooking Thanksgiving dinner and I´m enjoying it!</p>
-                  <a href="" class="card-link">💬 555</a>
-                  <a href="#" class="card-link">🔁 323</a>
-                  <a href="#" class="card-link">🤍 434</a>
-                  <a href="#" class="card-link">📤 4</a>
+                  <p style="display:inline">&emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-arrow-left-right"></i> 643 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-heart"></i> 56 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-upload"></i> 234</p>
                 </div>
               </div>
 
               <div class="card">
                 <div class="card-body">
                   <img src="images/woman2.jpg" alt="user photo">  
-                  <h5 class="card-title">Mathilda Svensson</h5>
+                  <h5 class="card-title">Nicole Cohen <i class="bi bi-patch-check-fill"><small> @cohenforever - Nov 5</small><span style="float:right;"><i class="bi bi-three-dots"></i></span></i></h5>
                   <p class="card-text">Just bought everything for the Thanksgiving dinner tonight!</p>
-                  <a href="" class="card-link">💬 555</a>
-                  <a href="#" class="card-link">🔁 124</a>
-                  <a href="#" class="card-link">🤍 2365</a>
-                  <a href="#" class="card-link">📤 </a>
+                  <p style="display:inline">&emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-arrow-left-right"></i> 643 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-heart"></i> 56 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-upload"></i> 234</p>
                 </div>
               </div>
 
               <div class="card">
                 <div class="card-body">
                   <img src="images/man2.jpg" alt="user photo">  
-                  <h5 class="card-title">Xavier Savage</h5>
+                  <h5 class="card-title">Theo Theodor <small> @theotheo - Nov 5</small><span style="float:right;"><i class="bi bi-three-dots"></i></span></i></h5>
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur...</p>
-                  <a href="" class="card-link">💬 234</a>
-                  <a href="#" class="card-link">🔁 453</a>
-                  <a href="#" class="card-link">🤍656</a>
-                  <a href="#" class="card-link">📤 7685</a>
+                  <p style="display:inline">&emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-arrow-left-right"></i> 643 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-heart"></i> 56 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-upload"></i> 234</p>
                 </div>
               </div>
 
               <div class="card" >
                 <div class="card-body">
                   <img src="images/man1.jpg" alt="user photo">  
-                  <h5 class="card-title">Tod Scott</h5>
+                  <h5 class="card-title">Tod Scott <small> @toddyscotty - Nov 5</small><span style="float:right;"><i class="bi bi-three-dots"></i></span></i></h5>
                   <p class="card-text">I am totally clueless right now</p>
-                  <a href="" class="card-link">💬 556</a>
-                  <a href="#" class="card-link">🔁 423</a>
-                  <a href="#" class="card-link">🤍 234</a>
-                  <a href="#" class="card-link">📤 345</a>
+                  <p style="display:inline">&emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-arrow-left-right"></i> 643 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-heart"></i> 56 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-upload"></i> 234</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/woman1.jpg" alt="user photo">  
+                  <h5 class="card-title">Julia Robertsson <small> @julliarob - Nov 5</small><span style="float:right;"><i class="bi bi-three-dots"></i></span></i></h5>
+                  <p class="card-text">Today I had a date with Theo Theodor :)</p>
+                  <p style="display:inline">&emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-arrow-left-right"></i> 643 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-heart"></i> 56 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link"><i class="bi bi-upload"></i> 234</p>
                 </div>
               </div>
             
           </div> <!-- COLUMN 2 ENDS HERE -->
 
 
-
-
-
-          <div class="col">
+          <!-- COLUMN 3 STARTS HERE -->
+          <div class="col"> 
             <input class="search-bar" type="text" placeholder="🔎 Search...">
-          
-            <br>
 
             <ul class="list-group right">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
