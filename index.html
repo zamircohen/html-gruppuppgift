@@ -89,6 +89,19 @@
           top: 50px;
         }
 
+        .card-link {
+            color: gray
+        }
+
+        small {
+          color: gray;
+          font-weight: 300;
+        }
+
+        .bi-patch-check-fill {
+          color: rgba(1, 82, 255, 0.658);
+        }
+
     </style>
 
 </head>
@@ -156,7 +169,7 @@
                   <h5 class="card-title">Mikko Tirronen <i class="bi bi-patch-check-fill"><small> @mikkster - Nov 5</small><span style="float:right;"><i class="bi bi-three-dots"></i></span></i></h5>
                   <p class="card-text">HTML RULES!!!</p>
                   <p style="display:inline">&emsp; &emsp; &emsp;</p>
-                  <p style="display:inline" class="card-link"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
+                  <p style="display:inline" class="card-link gray-text"><i class="bi bi-chat"></i> 555 &emsp; &emsp; &emsp;</p>
                   <p style="display:inline" class="card-link"><i class="bi bi-arrow-left-right"></i> 643 &emsp; &emsp; &emsp;</p>
                   <p style="display:inline" class="card-link"><i class="bi bi-heart"></i> 56 &emsp; &emsp; &emsp;</p>
                   <p style="display:inline" class="card-link"><i class="bi bi-upload"></i> 234</p>
@@ -337,8 +350,65 @@
             <p style="font-size: xx-small;">Ads info &emsp; More... &emsp; @2021 Twitter, Inc</p>
             </div>  
           </div>
+
+
+          <!-- MESSAGE NAV BAR  -->
+          <nav class="navbar fixed-bottom navbar-expand-lg navbar-light">
+            <div id="user-bottom-bar-container">
+              <div class="card border-0">
+                <div class="card-body">
+                  <img
+                    src="https://images.unsplash.com/photo-1583687534963-565854a3d6d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
+                    class="img-fluid rounded-circle"
+                    alt="user-img"
+                  />
+                  <h6 class="card-title" style="display: inline">
+                    <strong>Tamaki Neko</strong>
+                  </h6>
+                  <span style="display: inline"
+                    ><i class="bi bi-three-dots"></i
+                  ></span>
+                  <p id="tweet-username">@tamakineko</p>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav ms-auto">
+              <div class="btn-group dropup">
+                <button
+                  type="button"
+                  class="btn dropdown-toggle btn-search-bar"
+                  style="background-color: rgb(255, 255, 255)"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="message-button"
+                >Messages
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Mikkster´s message</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Rainny´s message</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Amanda´s message</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mahdi´s message</a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </nav>
+
+
+
+
           <!-- COLUMN 3 ENDS HERE -->
         
+
+          
+
         </div>
       </div>
     
